@@ -47,7 +47,7 @@ export const Profile = ({ locale }: ProfileProps) => {
               title: 'manvalls',
             },
             {
-              href: 'https://twitter.com/manvalls',
+              href: 'https://twitter.com/lazymanuel',
               alt: t.Social.Twitter,
               icon: twitterImage,
               title: '@lazymanuel',
