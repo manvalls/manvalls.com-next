@@ -1,0 +1,29 @@
+.hobbies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobbies>div {
+  margin-top: 20px;
+  max-width: 470px;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px 50px;
+  margin-bottom: 50px;
+}
+
+.hobbies>div.emojiList {
+  font-size: 16px;
+  gap: 15px 10px;
+  max-width: 530px;
+}
+
+.hobbies>div.emojiList>div {
+  border: 1px solid #adadad;
+  padding: 6px 10px 7px 8px;
+}

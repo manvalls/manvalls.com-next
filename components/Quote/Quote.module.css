@@ -1,0 +1,20 @@
+
+.quote {
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.quote a {
+  color: black;
+  font-size: 0.8em;
+}
+
+.quotesLink {
+  position: relative;
+}
+
+.quotesLinkImg {
+  position: absolute;
+  right: 10px;
+  top: -10px;
+}

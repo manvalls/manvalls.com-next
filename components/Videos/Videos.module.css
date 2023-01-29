@@ -1,0 +1,10 @@
+div.videos {
+  width: 95%;
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.videos>iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9.75;
+}
