@@ -18,7 +18,7 @@ div.profileRow {
   border: 1px solid black;
   padding: 1px;
   margin: 10%;
-  height: auto;
+  aspect-ratio: 1/1;
 }
 
 .name {

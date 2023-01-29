@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import { Suspense } from 'react'
+
 import { ProfileImage } from '@/components/ProfileImage'
 import { Socials } from '@/components/Socials'
 
@@ -29,8 +31,10 @@ export const Profile = ({ locale }: ProfileProps) => {
   return (
     <div className={st.profileRow}>
       <div className={st.profilePic}>
-        {/* @ts-expect-error Server Component */}
-        <ProfileImage className={st.profilePicImage} />
+        <Suspense fallback={<div className={st.profilePicImage} />}>
+          {/* @ts-expect-error Server Component */}
+          <ProfileImage className={st.profilePicImage} />
+        </Suspense>
       </div>
       <div className={st.nameAndSocial}>
         <Image className={st.name} alt={t.Title} src={nameImage} />
