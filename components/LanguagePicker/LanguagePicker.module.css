@@ -7,5 +7,5 @@
 }
 
 .languagePickerOption {
-  cursor: pointer;
+  display: flex;
 }

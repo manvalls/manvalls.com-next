@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Modal } from '@/components/Modal'
 import st from './Socials.module.css'
 
 type ModalProps = {
@@ -7,11 +8,11 @@ type ModalProps = {
 }
 
 type SocialLink = {
-  href: string
+  href?: string
   alt: string
   icon: string
   title?: string
-  borderless?: boolean
+  width?: number
   modal?: ModalProps
 }
 
@@ -23,11 +24,25 @@ type SocialsProps = {
 export const Socials = ({ socials, center }: SocialsProps) => {
   return (
     <div className={`${st.social} ${center ? st.center : ''}`}>
-      {socials.map((social) => (
-        <a href={social.href} title={social.title} key={social.href}>
-          <Image width={social.borderless ? 31 : 35} className={`${st.img} ${social.borderless ? st.borderless : ''}`} alt={social.alt} src={social.icon} />
-        </a>
-      ))}
+      {socials.map((social) => {
+        const component = (
+          <Image width={social.width || 35} style={social.width ? {margin: `${6 + (35 - social.width) / 2}px`} : {}} className={st.img} alt={social.alt} src={social.icon} />
+        )
+
+        if (social.modal) {
+          return (
+            <Modal key={social.alt} className={st.link} label={social.modal.label} value={social.modal.value}>
+              {component}
+            </Modal>
+          )
+        }
+
+        return (
+          <a href={social.href} className={st.link} title={social.title} key={social.href}>
+            {component}
+          </a>
+        )
+      })}
     </div>
   )
 }

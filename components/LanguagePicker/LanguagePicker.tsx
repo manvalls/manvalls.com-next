@@ -26,7 +26,7 @@ export const LanguagePicker = ({ locale, alt }: LanguagePickerProps) => {
   
   return (
     <div className={st.languagePicker}>
-      <Link href="/es" target='_self'>
+      <Link className={st.languagePickerOption} href="/es" target='_self'>
         <Image
           height={25}
           alt={alt.es}
@@ -35,9 +35,8 @@ export const LanguagePicker = ({ locale, alt }: LanguagePickerProps) => {
         />
       </Link>
       <Image height={25} src={dotImage} alt="" />
-      <Link href="/en" target='_self'>
+      <Link className={st.languagePickerOption} href="/en" target='_self'>
         <Image
-          className={st.languagePickerOption}
           height={25}
           alt={alt.en}
           tabIndex={0}

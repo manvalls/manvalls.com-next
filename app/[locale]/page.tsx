@@ -4,6 +4,7 @@ import { LanguagePicker } from '@/components/LanguagePicker'
 import { Profile } from '@/components/Profile'
 import { Hobbies } from '@/components/Hobbies'
 import { Videos } from '@/components/Videos'
+import { GameAccounts } from '@/components/GameAccounts'
 import { Separator } from '@/components/Separator'
 import { Quote } from '@/components/Quote'
 import { Credits } from '@/components/Credits'
@@ -20,6 +21,7 @@ export default function Home({ params: { locale } }: any) {
       <Hobbies locale={locale} />
       <Videos />
       <Quote locale={locale} />
+      <GameAccounts locale={locale} />
       <Separator />
       <Credits locale={locale} />
     </div>

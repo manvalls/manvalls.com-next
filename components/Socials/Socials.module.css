@@ -7,6 +7,7 @@
 
 .center.social {
   justify-content: center;
+  max-width: 250px;
 }
 
 .social {
@@ -15,14 +16,12 @@
   max-width: 285px;
 }
 
-.social a {
+.social .link {
   display: flex;
+  cursor: pointer;
+  align-items: center;
 }
 
 .social .img {
   margin: 6px;
-}
-
-.social .img.borderless {
-  margin: 8px;
 }

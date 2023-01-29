@@ -51,6 +51,7 @@ export const Profile = ({ locale }: ProfileProps) => {
               alt: t.Social.Twitter,
               icon: twitterImage,
               title: '@lazymanuel',
+              width: 31,
             },
             {
               href: 'https://github.com/manvalls',
@@ -81,14 +82,14 @@ export const Profile = ({ locale }: ProfileProps) => {
               alt: t.Social.Reddit,
               icon: redditImage,
               title: 'manvalls',
-              borderless: true,
+              width: 31,
             },
             {
               href: 'https://www.youtube.com/channel/UClU46N1TBLLbJMh1wMN-yNw',
               alt: t.Social.YouTube,
               icon: youtubeImage,
               title: 'manvalls',
-              borderless: true,
+              width: 31,
             },
             {
               href: 'https://www.last.fm/user/manvalls',
@@ -113,7 +114,7 @@ export const Profile = ({ locale }: ProfileProps) => {
               alt: t.Social.Grouvee,
               icon: grouveeImage,
               title: 'manvalls',
-              borderless: true,
+              width: 31,
             },
           ]}
         />
