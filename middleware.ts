@@ -8,7 +8,7 @@ export const config = {
   matcher: ['/']
 }
 
-const cookieName = 'i18next'
+const cookieName = 'NEXT_LOCALE'
 
 export function middleware(req: any) {
   let lng
