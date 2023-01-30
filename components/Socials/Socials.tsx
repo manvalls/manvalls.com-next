@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Modal } from '@/components/Modal'
+import { getTranslations } from '@/translations'
 import st from './Socials.module.css'
 
 type ModalProps = {
@@ -19,9 +20,11 @@ type SocialLink = {
 type SocialsProps = {
   socials: SocialLink[]
   center?: boolean
+  locale: string
 }
 
-export const Socials = ({ socials, center }: SocialsProps) => {
+export const Socials = ({ socials, center, locale }: SocialsProps) => {
+  const t = getTranslations(locale)
   return (
     <div className={`${st.social} ${center ? st.center : ''}`}>
       {socials.map((social) => {
@@ -31,7 +34,15 @@ export const Socials = ({ socials, center }: SocialsProps) => {
 
         if (social.modal) {
           return (
-            <Modal key={social.alt} className={st.link} label={social.modal.label} value={social.modal.value}>
+            <Modal
+              key={social.alt}
+              className={st.link}
+              label={social.modal.label}
+              value={social.modal.value}
+              copiedNotice={t.Social.CopiedMessage}
+              copyButton={t.Social.CopyButton}
+              closeButton={t.Social.CloseButton}
+            >
               {component}
             </Modal>
           )

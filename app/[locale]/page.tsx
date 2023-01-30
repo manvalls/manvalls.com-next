@@ -14,7 +14,6 @@ import { getTranslations } from '@/translations'
 export default function Home({ params: { locale } }: any) {
   const t = getTranslations(locale)
   return <>
-    <div id="modal-overlay" />
     <div className={st.topContainer}>
       <LanguagePicker locale={locale} alt={{ es: t.Languages.Spanish, en: t.Languages.English }} />
       <Profile locale={locale} />
