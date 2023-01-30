@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import st from './Separator.module.css'
 
-import SeparatorImage from '@/public/common/hr.svg'
+import SeparatorImage from '@/assets/common/hr.svg'
 
 export const Separator = () => {
   return (

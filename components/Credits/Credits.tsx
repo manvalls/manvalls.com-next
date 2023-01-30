@@ -2,12 +2,12 @@ import Image from 'next/image'
 import { getTranslations } from '@/translations'
 import st from './Credits.module.css'
 
-import FbImage from '@/public/common/fb.svg'
-import YtImage from '@/public/common/yt.svg'
-import GrImage from '@/public/common/gr.svg'
-import TmdbImage from '@/public/common/tmdb.svg'
-import TraktImage from '@/public/common/trakt.svg'
-import GrouveeImage from '@/public/common/grouvee.png'
+import FbImage from '@/assets/common/fb.svg'
+import YtImage from '@/assets/common/yt.svg'
+import GrImage from '@/assets/common/gr.svg'
+import TmdbImage from '@/assets/common/tmdb.svg'
+import TraktImage from '@/assets/common/trakt.svg'
+import GrouveeImage from '@/assets/common/grouvee.png'
 
 type CreditsProps = {
   locale: 'es'|'en'

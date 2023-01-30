@@ -3,13 +3,13 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 import st from './LanguagePicker.module.css'
 
-import dotImage from '@/public/common/dot.svg'
+import dotImage from '@/assets/common/dot.svg'
 
-import esLocale from '@/public/common/es.svg'
-import esLocaleSelected from '@/public/common/es_selected.svg'
+import esLocale from '@/assets/common/es.svg'
+import esLocaleSelected from '@/assets/common/es_selected.svg'
 
-import enLocale from '@/public/common/en.svg'
-import enLocaleSelected from '@/public/common/en_selected.svg'
+import enLocale from '@/assets/common/en.svg'
+import enLocaleSelected from '@/assets/common/en_selected.svg'
 
 type LanguagePickerProps = {
   locale: string;
