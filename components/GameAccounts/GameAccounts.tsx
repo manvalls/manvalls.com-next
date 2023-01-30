@@ -25,6 +25,7 @@ export const GameAccounts = ({ locale }: GameAccountsProps) => {
     <div className={st.gameAccounts}>
       <Image alt={t.Misc.GameAccounts} src={t.Images.GameAccounts} className={st.gameAccountsImg} />
       <Socials
+        locale={locale}
         center
         socials={[
           {

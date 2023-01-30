@@ -39,6 +39,7 @@ export const Profile = ({ locale }: ProfileProps) => {
       <div className={st.nameAndSocial}>
         <Image className={st.name} alt={t.Title} src={nameImage} />
         <Socials
+          locale={locale}
           socials={[
             {
               href: 'https://www.instagram.com/manvalls/',
