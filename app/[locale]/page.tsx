@@ -1,10 +1,13 @@
 import st from './page.module.css'
 
+import { Suspense } from 'react'
+
 import { LanguagePicker } from '@/components/LanguagePicker'
 import { Profile } from '@/components/Profile'
 import { Hobbies } from '@/components/Hobbies'
 import { Videos } from '@/components/Videos'
 import { GameAccounts } from '@/components/GameAccounts'
+import { MoviesAndTV } from '@/components/MoviesAndTV'
 import { Separator } from '@/components/Separator'
 import { Quote } from '@/components/Quote'
 import { Credits } from '@/components/Credits'
@@ -21,6 +24,10 @@ export default function Home({ params: { locale } }: any) {
       <Videos />
       <Quote locale={locale} />
       <GameAccounts locale={locale} />
+      <Suspense fallback={null}>
+        {/* @ts-expect-error Server Component */}
+        <MoviesAndTV locale={locale} />
+      </Suspense>
       <Separator />
       <Credits locale={locale} />
     </div>

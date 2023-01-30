@@ -1,0 +1,45 @@
+
+div.watchRecommendations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 550px;
+  width: 95%;
+  margin-bottom: 70px;
+}
+
+.watchRecommendationsImg {
+  margin-bottom: 30px;
+}
+
+.topTrakt {
+  text-align: center;
+}
+
+.topTraktImg {
+  aspect-ratio: 80 / 120;
+  width: 16%;
+  min-width: 80px;
+}
+
+.topTraktLink {
+  position: relative;
+  width: 100%;
+}
+
+.topTraktLinkImage {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+@media (max-width: 554px) {
+  .topTraktImg {
+    width: 20%;
+  }
+
+  div.watchRecommendations {
+    max-width: 450px;
+  }
+}

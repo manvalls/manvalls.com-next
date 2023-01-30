@@ -1,4 +1,4 @@
-import { getProfileImage } from '@/api/getProfileImage'
+import { getProfileImage } from '@/lib/getProfileImage'
 
 type ProfileImageProps = {
   className?: string

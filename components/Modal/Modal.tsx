@@ -2,6 +2,9 @@ import { useState } from 'react'
 import { createPortal } from 'react-dom'
 import st from './Modal.module.css'
 
+import { Noto_Sans } from '@next/font/google'
+const notoSans = Noto_Sans({ weight: '400', subsets: ['latin'] })
+
 type ModalProps = {
   children: React.ReactNode
   className?: string
@@ -37,7 +40,7 @@ export const Modal = ({ children, className, copiedNotice, copyButton, closeButt
       </div>
       {isOpen && createPortal((
         <div className={st.modalOverlay}>
-          <div className={st.modal}>
+          <div className={`${st.modal} ${notoSans.className}`}>
             <div className={st.modalX} onClick={close}>✖</div>
             <div className={st.modalContent}>{label}</div>
             {copied && (
