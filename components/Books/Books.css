@@ -1,0 +1,30 @@
+
+.gr_grid_branding {
+  display: none;
+}
+
+.gr_grid_container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 0px 5px;
+  flex-wrap: wrap;
+}
+
+#gr_grid_widget_1643220741 {
+  width: 100%;
+}
+
+.gr_grid_container .gr_grid_book_container {
+  width: 19%;
+  min-width: 80px;
+}
+
+.gr_grid_container img {
+  aspect-ratio: 80 / 120;
+  width: 100%;
+}
+
+#gr_grid_widget_1643220741 h2 {
+  display: none;
+}

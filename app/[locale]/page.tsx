@@ -9,6 +9,7 @@ import { Videos } from '@/components/Videos'
 import { GameAccounts } from '@/components/GameAccounts'
 import { MoviesAndTV } from '@/components/MoviesAndTV'
 import { Games } from '@/components/Games'
+import { Books } from '@/components/Books'
 import { Separator } from '@/components/Separator'
 import { Quote } from '@/components/Quote'
 import { Credits } from '@/components/Credits'
@@ -30,6 +31,7 @@ export default function Home({ params: { locale } }: any) {
         <MoviesAndTV locale={locale} />
       </Suspense>
       <Games locale={locale} />
+      <Books locale={locale} />
       <Separator />
       <Credits locale={locale} />
     </div>

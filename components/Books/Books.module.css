@@ -1,0 +1,25 @@
+
+div.books {
+  max-width: 500px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.booksImg {
+  margin-bottom: 20px;
+}
+
+.booksLink {
+  position: relative;
+  width: 100%;
+}
+
+.booksLinkImg {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
