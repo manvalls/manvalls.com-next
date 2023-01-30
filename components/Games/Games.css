@@ -1,0 +1,27 @@
+
+#grouvee_widget_738705 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px 3px;
+}
+
+#grouvee_widget_738705>h2 {
+  display: none;
+}
+
+.grouvee_container {
+  width: 16%;
+  min-width: 80px;
+}
+
+@media (max-width: 554px) {
+  .grouvee_container {
+    width: 20%;
+    min-width: 80px;
+  }
+}
+
+.grouvee_container img {
+  width: 100%;
+}

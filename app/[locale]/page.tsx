@@ -8,6 +8,7 @@ import { Hobbies } from '@/components/Hobbies'
 import { Videos } from '@/components/Videos'
 import { GameAccounts } from '@/components/GameAccounts'
 import { MoviesAndTV } from '@/components/MoviesAndTV'
+import { Games } from '@/components/Games'
 import { Separator } from '@/components/Separator'
 import { Quote } from '@/components/Quote'
 import { Credits } from '@/components/Credits'
@@ -28,6 +29,7 @@ export default function Home({ params: { locale } }: any) {
         {/* @ts-expect-error Server Component */}
         <MoviesAndTV locale={locale} />
       </Suspense>
+      <Games locale={locale} />
       <Separator />
       <Credits locale={locale} />
     </div>
