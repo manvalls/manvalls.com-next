@@ -9,13 +9,7 @@ type MoviesAndTVProps = {
 
 export const MoviesAndTV = async ({ locale }: MoviesAndTVProps) => {
   const t = getTranslations(locale)
-
-  let topTraktImageLinks = []
-  try {
-    topTraktImageLinks = await getTopTraktImageLinks()
-  } catch (error) {
-    return null
-  }
+  const topTraktImageLinks =  await getTopTraktImageLinks()
 
   return (
     <div className={st.watchRecommendations}>
