@@ -68,8 +68,8 @@ export default {
         Description: "Viajar",
       },
       {
-        Emoji:       "🍳",
-        Description: "Cocinar",
+        Emoji:       "🍜",
+        Description: "Comida",
       },
       {
         Emoji:       "⛩️",
@@ -84,8 +84,8 @@ export default {
         Description: "Anime y manga",
       },
       {
-        Emoji:       "👩🏻‍🎤",
-        Description: "Música en directo",
+        Emoji:       "🎵",
+        Description: "Música",
       },
       {
         Emoji:       "🧠",
