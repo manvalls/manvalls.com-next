@@ -1,10 +1,5 @@
 import PoweredBy from '@/assets/es/powered-by.svg'
-import About from '@/assets/es/about.svg'
 import Hobbies from '@/assets/es/hobbies.svg'
-import Atheist from '@/assets/es/atheist.svg'
-import Bisexual from '@/assets/es/bisexual.svg'
-import OpenMarriage from '@/assets/es/open-marriage.svg'
-import Parent from '@/assets/es/parent.svg'
 import GameAccounts from '@/assets/es/game-accounts.svg'
 import FavouriteMovies from '@/assets/es/favourite-movies.svg'
 import FavouriteGames from '@/assets/es/favourite-games.svg'
@@ -132,12 +127,7 @@ export default {
   },
   Images: {
     PoweredBy,
-    About,
     Hobbies,
-    Atheist,
-    Bisexual,
-    OpenMarriage,
-    Parent,
     GameAccounts,
     FavouriteMovies,
     FavouriteGames,

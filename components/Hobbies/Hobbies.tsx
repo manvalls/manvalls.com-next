@@ -21,13 +21,6 @@ export const Hobbies = ({ locale }: HobbiesProps) => {
           </div>
         ))}
       </div>
-      <Image alt={t.About.Title} src={t.Images.About} />
-      <div>
-        <Image alt={t.About.Atheist} src={t.Images.Atheist} />
-        <Image alt={t.About.Bisexual} src={t.Images.Bisexual} />
-        <Image alt={t.About.OpenMarriage} src={t.Images.OpenMarriage} />
-        <Image alt={t.About.Parent} src={t.Images.Parent} />
-      </div>
     </div>
   )
 }
