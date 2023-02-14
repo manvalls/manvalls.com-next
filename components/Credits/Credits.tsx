@@ -9,12 +9,8 @@ import TmdbImage from '@/assets/common/tmdb.svg'
 import TraktImage from '@/assets/common/trakt.svg'
 import GrouveeImage from '@/assets/common/grouvee.png'
 
-type CreditsProps = {
-  locale: 'es'|'en'
-}
-
-export const Credits = ({ locale }: CreditsProps) => {
-  const t = getTranslations(locale)
+export const Credits = () => {
+  const t = getTranslations()
   return (
     <div className={st.credits}>
       <Image alt={t.Misc.PoweredBy} src={t.Images.PoweredBy} className={st.titleImage} />

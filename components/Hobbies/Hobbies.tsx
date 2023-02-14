@@ -5,12 +5,8 @@ import { getTranslations } from '@/translations'
 import { Noto_Sans } from '@next/font/google'
 const notoSans = Noto_Sans({ weight: '400', subsets: ['latin'] })
 
-type HobbiesProps = {
-  locale: string
-}
-
-export const Hobbies = ({ locale }: HobbiesProps) => {
-  const t = getTranslations(locale)
+export const Hobbies = () => {
+  const t = getTranslations()
   return (
     <div className={st.hobbies}>
       <Image alt={t.Hobbies.Title} src={t.Images.Hobbies} />

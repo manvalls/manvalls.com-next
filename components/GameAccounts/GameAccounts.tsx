@@ -15,17 +15,12 @@ import chessImage from '@/assets/common/logos/chess.svg'
 
 import { Socials } from '@/components/Socials'
 
-type GameAccountsProps = {
-  locale: string
-}
-
-export const GameAccounts = ({ locale }: GameAccountsProps) => {
-  const t = getTranslations(locale)
+export const GameAccounts = () => {
+  const t = getTranslations()
   return (
     <div className={st.gameAccounts}>
       <Image alt={t.Misc.GameAccounts} src={t.Images.GameAccounts} className={st.gameAccountsImg} />
       <Socials
-        locale={locale}
         center
         socials={[
           {

@@ -1,10 +1,14 @@
+import serverContext from 'server-only-context';
+
+import locales from '@/locales';
+
 import { default as es } from './es';
 import { default as en } from './en';
 
-export const locales = ['es', 'en'];
+export const [getLocale, setLocale] = serverContext(locales[0])
 
-export const getTranslations = (locale: string) => {
-  switch (locale) {
+export const getTranslations = () => {
+  switch (getLocale()) {
     case 'es':
       return es;
     case 'en':
@@ -12,3 +16,5 @@ export const getTranslations = (locale: string) => {
       return en;
   }
 }
+
+export { locales };

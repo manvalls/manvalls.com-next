@@ -3,12 +3,8 @@ import st from './MoviesAndTV.module.css'
 import { getTopTraktImageLinks } from '@/lib/getTopTraktImageLinks'
 import { getTranslations } from '@/translations'
 
-type MoviesAndTVProps = {
-  locale: string
-}
-
-export const MoviesAndTV = async ({ locale }: MoviesAndTVProps) => {
-  const t = getTranslations(locale)
+export const MoviesAndTV = async () => {
+  const t = getTranslations()
   const topTraktImageLinks =  await getTopTraktImageLinks()
 
   return (

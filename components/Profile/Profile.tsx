@@ -22,12 +22,8 @@ import grouveeImage from '@/assets/common/logos/grouvee.svg'
 import { getTranslations } from '@/translations'
 import st from './Profile.module.css'
 
-type ProfileProps = {
-  locale: string
-}
-
-export const Profile = ({ locale }: ProfileProps) => {
-  const t = getTranslations(locale)
+export const Profile = () => {
+  const t = getTranslations()
   return (
     <div className={st.profileRow}>
       <div className={st.profilePic}>
@@ -39,7 +35,6 @@ export const Profile = ({ locale }: ProfileProps) => {
       <div className={st.nameAndSocial}>
         <Image className={st.name} alt={t.Title} src={nameImage} />
         <Socials
-          locale={locale}
           socials={[
             {
               href: 'https://www.instagram.com/manvalls/',

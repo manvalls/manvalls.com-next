@@ -5,12 +5,8 @@ import { ClientScript } from '../ClientScript'
 import './Games.css'
 import st from './Games.module.css'
 
-type GamesProps = {
-  locale: string
-}
-
-export const Games = ({ locale }: GamesProps) => {
-  const t = getTranslations(locale)
+export const Games = () => {
+  const t = getTranslations()
   return (
     <div className={st.videogames}>
       <Image className={st.videogamesImg} alt={t.Misc.FavouriteGames} src={t.Images.FavouriteGames} />

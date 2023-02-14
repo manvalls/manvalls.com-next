@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import acceptLanguage from 'accept-language'
-import { locales } from './translations'
+import locales from './locales'
 
 acceptLanguage.languages(locales)
 

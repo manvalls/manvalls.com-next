@@ -14,26 +14,27 @@ import { Separator } from '@/components/Separator'
 import { Quote } from '@/components/Quote'
 import { Credits } from '@/components/Credits'
 
-import { getTranslations } from '@/translations'
+import { getTranslations, setLocale } from '@/translations'
 
 export default function Home({ params: { locale } }: any) {
-  const t = getTranslations(locale)
+  setLocale(locale)
+  const t = getTranslations()
   return <>
     <div className={st.topContainer}>
-      <LanguagePicker locale={locale} alt={{ es: t.Languages.Spanish, en: t.Languages.English }} />
-      <Profile locale={locale} />
-      <Hobbies locale={locale} />
-      <Videos />
-      <Quote locale={locale} />
-      <GameAccounts locale={locale} />
+      <LanguagePicker alt={{ es: t.Languages.Spanish, en: t.Languages.English }} locale={locale} />
+      <Profile/>
+      <Hobbies/>
+      <Videos/>
+      <Quote/>
+      <GameAccounts/>
       <Suspense fallback={null}>
         {/* @ts-expect-error Server Component */}
-        <MoviesAndTV locale={locale} />
+        <MoviesAndTV/>
       </Suspense>
-      <Games locale={locale} />
-      <Books locale={locale} />
-      <Separator />
-      <Credits locale={locale} />
+      <Games/>
+      <Books/>
+      <Separator/>
+      <Credits/>
     </div>
   </>
 }

@@ -1,7 +1,8 @@
-import { getTranslations } from "@/translations"
+import { getTranslations, setLocale } from "@/translations"
 
 export default async function Head({ params: { locale } }: any) {
-  const t = getTranslations(locale)
+  setLocale(locale)
+  const t = getTranslations()
   return (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>

@@ -20,11 +20,10 @@ type SocialLink = {
 type SocialsProps = {
   socials: SocialLink[]
   center?: boolean
-  locale: string
 }
 
-export const Socials = ({ socials, center, locale }: SocialsProps) => {
-  const t = getTranslations(locale)
+export const Socials = ({ socials, center }: SocialsProps) => {
+  const t = getTranslations()
   return (
     <div className={`${st.social} ${center ? st.center : ''}`}>
       {socials.map((social) => {
